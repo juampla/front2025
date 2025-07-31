@@ -47,8 +47,8 @@
         width: 20vw;
     }
 .titulo{
-      margin-left: 2vw;
-      margin-right: 2vw;
+      margin-left: 1,5vw;
+      margin-right: 1,5vw;
       font-family: Merienda;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
@@ -80,7 +80,7 @@
         background-color: #31e975;
     }
     .btn-volver-flotante {
-   position: fixed;
+  position: fixed;
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
@@ -420,3 +420,45 @@
         
       
     }
+
+  .card-img-top{
+    width: 5vw;
+  }
+
+  /* Botón flotante en esquina inferior derecha */
+#modo-oscuro-btn {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1000;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#modo-oscuro-btn:hover {
+  background: #444;
+}
+
+/* Estilo para modo oscuro */
+.modo-oscuro {
+  background-color: #181818 !important;
+  color: #f8f8f8 !important;
+}
+
+.modo-oscuro a,
+.modo-oscuro h1,
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro p {
+  color: #f8f8f8 !important;
+}
+
+
